@@ -12,6 +12,7 @@
 		432A22FB212E54F50092A256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432A22F9212E54F50092A256 /* Main.storyboard */; };
 		432A22FD212E54F60092A256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432A22FC212E54F60092A256 /* Assets.xcassets */; };
 		432A2300212E54F60092A256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432A22FE212E54F60092A256 /* LaunchScreen.storyboard */; };
+		432A230C212E56200092A256 /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 432A230B212E56200092A256 /* UIImage+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		432A22FC212E54F60092A256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		432A22FF212E54F60092A256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		432A2301212E54F60092A256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		432A2309212E561F0092A256 /* MyAdditions-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyAdditions-Bridging-Header.h"; sourceTree = "<group>"; };
+		432A230A212E56200092A256 /* UIImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions.h"; sourceTree = "<group>"; };
+		432A230B212E56200092A256 /* UIImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		432A22F4212E54F50092A256 /* MyAdditions */ = {
 			isa = PBXGroup;
 			children = (
+				432A2307212E55B40092A256 /* Additions */,
 				432A22F5212E54F50092A256 /* AppDelegate.swift */,
 				432A22F7212E54F50092A256 /* ViewController.swift */,
 				432A22F9212E54F50092A256 /* Main.storyboard */,
@@ -62,6 +67,16 @@
 				432A2301212E54F60092A256 /* Info.plist */,
 			);
 			path = MyAdditions;
+			sourceTree = "<group>";
+		};
+		432A2307212E55B40092A256 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				432A230A212E56200092A256 /* UIImage+Additions.h */,
+				432A230B212E56200092A256 /* UIImage+Additions.m */,
+				432A2309212E561F0092A256 /* MyAdditions-Bridging-Header.h */,
+			);
+			path = Additions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +111,7 @@
 				TargetAttributes = {
 					432A22F1212E54F50092A256 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -136,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				432A22F8212E54F50092A256 /* ViewController.swift in Sources */,
+				432A230C212E56200092A256 /* UIImage+Additions.m in Sources */,
 				432A22F6212E54F50092A256 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PESCU4X9T6;
 				INFOPLIST_FILE = MyAdditions/Info.plist;
@@ -289,6 +307,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wang.fan.MyAdditions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyAdditions/Additions/MyAdditions-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PESCU4X9T6;
 				INFOPLIST_FILE = MyAdditions/Info.plist;
@@ -307,6 +328,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wang.fan.MyAdditions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyAdditions/Additions/MyAdditions-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
