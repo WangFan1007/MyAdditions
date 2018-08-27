@@ -11,4 +11,5 @@
 @interface UIImage (Additions)
 - (UIImage *) imageWithTintColor:(UIColor *)tintColor;
 - (UIImage *) imageWithHeadImg:(UIImage *)headImg;
+- (UIImage *) circleImage;
 @end

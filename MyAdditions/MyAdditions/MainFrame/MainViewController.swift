@@ -13,7 +13,27 @@ class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        print(1)
+/////线程死锁
+//        DispatchQueue.main.async {
+//            print(2)
+//        }
+//        print(3)
         setupChildViewControllers()
+        
+        roundImg()
+    }
+}
+
+
+// MARK: - 测试方法
+extension MainViewController{
+    func roundImg() {
+        let img = #imageLiteral(resourceName: "测试图片")
+        let imgView = UIImageView(image:img.circle())
+        imgView.frame = CGRect(x: 40, y: 40, width: 100, height: 100)
+        view.addSubview(imgView)
     }
 }
 
@@ -47,7 +67,6 @@ extension MainViewController{
             addChildViewController(vc)
         }
     }
-    
     
 }
 

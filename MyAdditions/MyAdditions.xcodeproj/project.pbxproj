@@ -81,6 +81,7 @@
 		432A22F4212E54F50092A256 /* MyAdditions */ = {
 			isa = PBXGroup;
 			children = (
+				436801AB2133948000AE51CF /* Models */,
 				4386A25E212FE930002B7BAF /* Additions_swift */,
 				4386A258212FE487002B7BAF /* Test */,
 				4386A255212FE241002B7BAF /* MainFrame */,
@@ -103,6 +104,13 @@
 				432A2309212E561F0092A256 /* MyAdditions-Bridging-Header.h */,
 			);
 			path = Additions;
+			sourceTree = "<group>";
+		};
+		436801AB2133948000AE51CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4386A255212FE241002B7BAF /* MainFrame */ = {
@@ -411,7 +419,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PESCU4X9T6;
 				INFOPLIST_FILE = MyAdditions/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wang.fan.MyAdditions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyAdditions/Additions/MyAdditions-Bridging-Header.h";
@@ -430,7 +441,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PESCU4X9T6;
 				INFOPLIST_FILE = MyAdditions/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wang.fan.MyAdditions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyAdditions/Additions/MyAdditions-Bridging-Header.h";
