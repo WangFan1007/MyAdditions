@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43111D94214F9B7D00FEF830 /* WFProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43111D93214F9B7D00FEF830 /* WFProgressView.swift */; };
 		432A22F6212E54F50092A256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432A22F5212E54F50092A256 /* AppDelegate.swift */; };
 		432A22F8212E54F50092A256 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432A22F7212E54F50092A256 /* ViewController.swift */; };
 		432A22FB212E54F50092A256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432A22F9212E54F50092A256 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		00D194BFB2C85E53B5D04B24 /* Pods-MyAdditions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAdditions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyAdditions/Pods-MyAdditions.debug.xcconfig"; sourceTree = "<group>"; };
+		43111D93214F9B7D00FEF830 /* WFProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WFProgressView.swift; sourceTree = "<group>"; };
 		432A22F2212E54F50092A256 /* MyAdditions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAdditions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		432A22F5212E54F50092A256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		432A22F7212E54F50092A256 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		43111D92214F9B3C00FEF830 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				43111D93214F9B7D00FEF830 /* WFProgressView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		432A22E9212E54F50092A256 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 		432A22F4212E54F50092A256 /* MyAdditions */ = {
 			isa = PBXGroup;
 			children = (
+				43111D92214F9B3C00FEF830 /* Classes */,
 				436801AB2133948000AE51CF /* Models */,
 				4386A25E212FE930002B7BAF /* Additions_swift */,
 				4386A258212FE487002B7BAF /* Test */,
@@ -268,6 +279,7 @@
 				432A22F8212E54F50092A256 /* ViewController.swift in Sources */,
 				432A230C212E56200092A256 /* UIImage+Additions.m in Sources */,
 				43478B5221338FC300A50DB8 /* BaseTableViewController.swift in Sources */,
+				43111D94214F9B7D00FEF830 /* WFProgressView.swift in Sources */,
 				432A22F6212E54F50092A256 /* AppDelegate.swift in Sources */,
 				4386A260212FE95A002B7BAF /* UIColor+RandomColor.swift in Sources */,
 				4386A257212FE30C002B7BAF /* MainViewController.swift in Sources */,

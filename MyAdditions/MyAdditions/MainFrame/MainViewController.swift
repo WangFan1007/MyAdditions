@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 /// Mian View controller for Customize tabbar, and as main app's RootViewController.
 class MainViewController: UITabBarController {
 
@@ -23,6 +24,8 @@ class MainViewController: UITabBarController {
         setupChildViewControllers()
         
         roundImg()
+        
+        testProgressView()
     }
 }
 
@@ -35,6 +38,20 @@ extension MainViewController{
         imgView.frame = CGRect(x: 40, y: 40, width: 100, height: 100)
         view.addSubview(imgView)
     }
+}
+
+extension MainViewController{
+    func testProgressView() {
+        let pv = WFProgressView()
+        pv.frame = CGRect(x: 70, y: 300, width: 200, height: 140)
+        pv.setTitle("100%", for: .normal)
+        pv.progress = 0.5
+        view.addSubview(pv)
+        Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { (_) in
+            pv.progress += 0.1
+        })
+    }
+
 }
 
 
